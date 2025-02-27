@@ -7,22 +7,26 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
-    <header>
-        <div><a href="#form">Forms</a></div>
-        <div><a href="#table" >Table</a></div>
-        <div><a href="#video" >Video</a></div>
-        <div><a href="#images">Images</a></div>
-        <div><a href="#audio">Audio</a></div>
+    <header >
+        <ul class="flex">
+           <li> <a href="#form">Forms</a> </li>
+           <li> <a href="#table">Table</a></li>
+           <li> <a href="#video" >Video</a></li>
+           <li> <a href="#audio">Audio</a></li>
+           <li> <a href="#images">Images</a></li>
+        </ul>
 
     </header>
 
     
     <section id="form" class="container">
+       
+       
         <form action="">
-   
+
+            <h1>Form</h1>
     <fieldset >
         <legend>Personal Information</legend>
-
         <table>
             <tr>
                <td> <label for="name">First Name:</label></td>    
@@ -79,6 +83,13 @@
                 <td><input type="range" id="range"></td>
             </tr>
             <tr>
+                <td><label for="">Favourite Games:</label></td>
+                <td><input type="checkbox" id="games"> <label for="games">Cricket</label>   
+                    <input type="checkbox" id="games">  <label for="games">Football</label> 
+                    <input type="checkbox" id="games">    <label for="games">Badminton</label> 
+                </td>
+            </tr>
+            <tr>
                 <td><label for="hobby">Favourite Hobbies:></td>
                 <td>
                     <select name="hobbies" id="hobby">
@@ -122,6 +133,7 @@
 
    
 
+    <h1>Table</h1>
     <table border="2px">
         <tr>
             <th colspan="7">Simple Bill</th>
