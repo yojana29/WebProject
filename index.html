@@ -8,62 +8,117 @@
 <link rel="stylesheet" href="style.css">
 <body>
     <header>
-        <div><a href="#form" target="_blank">Forms</a></div>
-        <div><a href="#table" target="_blank">Table</a></div>
+        <div><a href="#form">Forms</a></div>
+        <div><a href="#table" >Table</a></div>
+        <div><a href="#video" >Video</a></div>
+        <div><a href="#images">Images</a></div>
+        <div><a href="#audio">Audio</a></div>
 
     </header>
 
     
-    <section id="form">
-        <div class="container">
-
-        
-
+    <section id="form" class="container">
         <form action="">
    
-    <fieldset>
-        <legend>Registration Form</legend>
-      <br>
-    <label for="name">First Name</label>          <input type="text" id="name">
-    <br>
-    <br>
-    <label for="name">Last Name</label>           <input type="text" id="name">
-    <br>
-    <br>
-    <label for="name">Nick Name</label>           <input type="text" id="name">
-    <br>
-    <br>
-   <label for="mail">e-mail</label>               <input type="mail" id="mail">
-    <br>
-    <br>
-   <label for="password">Password</label>         <input type="password" id="password">
-    <br>
-    <br>
-    <label for="date">Date of Birth</label>       <input type="date" id="date">
-    <br>
-    <br>
-    <label for="">Gender</label>                 <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female"> <label for="female">FeMale</label>
-    <input type="radio" id="others" name="gender" value="others"> <label for="others">Others</label>
-    <br>
-    <br>
-    <label for="mobile">Mobile</label>            <input type="mobile" id="mobile">
-    <br>
-    <br>
-    <label for="address">Address</label> <textarea id="address" rows="4" cols="30"></textarea>
-    <br>
-    <button>submit</button> 
-     
-    <input type="reset">
+    <fieldset >
+        <legend>Personal Information</legend>
 
-</fieldset>
-     
+        <table>
+            <tr>
+               <td> <label for="name">First Name:</label></td>    
+               <td><input type="text" id="name" required></td>
+            </tr>
+            <tr>
+      
+                <td><label for="lastname">Last Name:</label>  </td>
+                <td><input type="text" id="lastname" required></td>      
+            </tr>
+            <tr>
+                <td><label for="nickname">Nick Name:</label></td>
+                <td><input type="text" id="nickname"> </td>
+            </tr>
+            <tr>
+                <td> <label for="address">Address:</label> </td>
+                <td> <input type="text" id="address">  </td>
+            </tr>
+            <tr>
+                <td> <label for="date">Date of Birth:</label>  </td>
+                <td><input type="date" id="date"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender:</label> </td>
+                <td><input type="radio" id="male" name="gender" value="male">  <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"> <label for="female">FeMale</label>
+                    <input type="radio" id="others" name="gender" value="others"> <label for="others">Others</label>      
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile:</label> </td>
+                <td> <input type="mobile" id="mobile"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="mail">e-mail:</label> </td>
+                <td><input type="mail" id="mail"></td>
+            </tr>
+            
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>  
+            <tr>
+                <td><label for="file">Upload a file:</label></td>
+                <td><input type="file" id="file"></td>
+            </tr>
+            <tr>
+                <td><label for="photo">Upload your photo:</label></td>
+                <td><input type="image" id="photo"></td>
+            </tr>
+            <tr>
+                <td><label for="range">Anger Issue:</label></td>
+                <td><input type="range" id="range"></td>
+            </tr>
+            <tr>
+                <td><label for="hobby">Favourite Hobbies:></td>
+                <td>
+                    <select name="hobbies" id="hobby">
+                        <option value="Travelling">Travelling</option>
+                        <option value="Dancing">Dancing</option>
+                        <option value="Singing">Singing</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="languages"> Languages:</label></td>
+                <td><select id="languages">
+                    <optgroup label="Programming Languages">
+                    <option value="js"> JS</option>  
+                    <option value="python"> Python</option>  
+                    <option value="java"> Java</option> 
+                    </optgroup>
+                    <optgroup label="General Languages">
+                        <option value="Nepali">Nepali</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="English">English</option>
+                    </optgroup> 
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td> <textarea  rows="4" cols="30" placeholder="short explanation about yourself"></textarea> </td>
+            </tr>
+            <tr>
+                <td><button>submit</button> </td>
+                <td><input type="reset"> </td>
+            </tr>
+           
+        </table>
+ 
+</fieldset>   
 </form>
-</div>
 </section>
 
-<section id="table">
-    <div class="container">
+<section id="table" class="container">
 
    
 
@@ -125,18 +180,15 @@
 
         <td colspan="7">Total</td>
     </table>
-</div>
 
 </section>
-<div class="container">
 
 
-<section id="video">
+<section id="video" class="container">
     <video width="320" height="240" controls>
         <source src="video.mp4" type="video/mp4">
         <source src="video.ogg" type="video/ogg">
       </video>
-    </div>
 </section>
 </body>
 </html>
