@@ -1,16 +1,27 @@
+
 .container{
-    max-width:1200px;
+    min-width:1200px;
     height:100vh;
     padding:20px;
 }
+.heading{
+    position:relative;
+    top:400px;
+    left:250px;
+    
+}
 .flex{
     display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap:30px;
+    
 }
 ul{
     list-style:none;
+    flex-direction: row;
+    justify-content:end;
+    gap:40px;
+}
+.first-page{
+    background-color:rgba(159,223,181,255);
 }
 
 
@@ -18,12 +29,14 @@ ul{
 /* css adding in the header part */
 header{
     background-color:white;
-    width:90%;
+    width:100%;
     position:fixed;
     top:0;
+    background-color:beige;
 }
 a{
    text-decoration: none; 
+   margin-right:20px;
 }
 /* css added in the form */
 
@@ -31,16 +44,30 @@ form{
     margin:25px 500px;
     max-width:max-content;
 }
-h1{
+ form h1{
     margin-left:250px;
 }
 
 /* css for table */
 
-table {
-    border-spacing: 0 10px; /* The first value (0) is for column spacing, the second (30px) is for row spacing */
-}
+/* table {
+    border-spacing: 0 10px; The first value (0) is for column spacing, the second (30px) is for row spacing
+} */
 #table h1{
     margin:55px 550px;
+}
+table{
+    border:2px solid black;
+    border-collapse:collapse;
+}
+tr,th,td{
+    border:1px solid black;
+    padding:5px;
+}
+.rotate{
+    transform: rotate(-90deg);
+}
+.rotate1{
+    transform:rotate(90deg);
 }
 
