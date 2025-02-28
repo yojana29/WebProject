@@ -3,6 +3,7 @@
     min-width:1200px;
     height:100vh;
     padding:20px;
+    background-color:whitesmoke;
 }
 .heading{
     position:relative;
@@ -19,6 +20,17 @@ ul{
     flex-direction: row;
     justify-content:end;
     gap:40px;
+}
+ul a{
+    color:purple;
+    font-weight:bold;
+}
+a:hover{
+    color:blue;
+
+}
+a:focus{
+    color:red;
 }
 .first-page{
     background-color:rgba(159,223,181,255);
@@ -44,6 +56,13 @@ form{
     margin:25px 500px;
     max-width:max-content;
 }
+.form-table{
+    border:none;
+}
+.form-table td{
+    border:none;
+}
+
  form h1{
     margin-left:250px;
 }
@@ -56,9 +75,12 @@ form{
 #table h1{
     margin:55px 550px;
 }
-table{
+.first-table{
     border:2px solid black;
     border-collapse:collapse;
+    position:relative;
+    left:150px;
+
 }
 tr,th,td{
     border:1px solid black;
@@ -70,4 +92,13 @@ tr,th,td{
 .rotate1{
     transform:rotate(90deg);
 }
+.second-table{
+    border:2px solid black;
+    border-collapse:collapse;
+    position:relative;
+    left:750px;
+    bottom:200px;
+}
+
+
 

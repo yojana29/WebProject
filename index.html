@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="style.css">
 <body>
     <header >
-        <ul class="flex">
+        <ul class="flex ">
            <li> <a href="#form">Forms</a> </li>
            <li> <a href="#table">Table</a></li>
            <li> <a href="#video" >Video</a></li>
@@ -30,69 +30,69 @@
             <h1>Form</h1>
     <fieldset >
         <legend>Personal Information</legend>
-        <table>
-            <tr>
-               <td> <label for="name">First Name:</label></td>    
+        <table class="form-table">
+            <tr class="form-table">
+               <td > <label for="name">First Name:</label></td>    
                <td><input type="text" id="name" required></td>
             </tr>
-            <tr>
+            <tr class="form-table">
       
                 <td><label for="lastname">Last Name:</label>  </td>
                 <td><input type="text" id="lastname" required></td>      
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td><label for="nickname">Nick Name:</label></td>
                 <td><input type="text" id="nickname"> </td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td> <label for="address">Address:</label> </td>
                 <td> <input type="text" id="address">  </td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td> <label for="date">Date of Birth:</label>  </td>
                 <td><input type="date" id="date"></td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td><label for="">Gender:</label> </td>
                 <td><input type="radio" id="male" name="gender" value="male">  <label for="male">Male</label>
                     <input type="radio" id="female" name="gender" value="female"> <label for="female">FeMale</label>
                     <input type="radio" id="others" name="gender" value="others"> <label for="others">Others</label>      
                 </td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td><label for="mobile">Mobile:</label> </td>
                 <td> <input type="mobile" id="mobile"></td>
             </tr>
 
-            <tr>
+            <tr class="form-table">
                 <td> <label for="mail">e-mail:</label> </td>
                 <td><input type="mail" id="mail"></td>
             </tr>
             
-            <tr>
+            <tr class="form-table">
                 <td><label for="password">Password:</label></td>
                 <td><input type="password" id="password"></td>
             </tr>  
-            <tr>
+            <tr class="form-table">
                 <td><label for="file">Upload a file:</label></td>
                 <td><input type="file" id="file"></td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td><label for="photo">Upload your photo:</label></td>
                 <td><input type="image" id="photo"></td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td><label for="range">Anger Issue:</label></td>
                 <td><input type="range" id="range"></td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td><label for="">Favourite Games:</label></td>
                 <td><input type="checkbox" id="games"> <label for="games">Cricket</label>   
                     <input type="checkbox" id="games">  <label for="games">Football</label> 
                     <input type="checkbox" id="games">    <label for="games">Badminton</label> 
                 </td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td><label for="hobby">Favourite Hobbies:></td>
                 <td>
                     <select name="hobbies" id="hobby">
@@ -102,7 +102,7 @@
                     </select>
                 </td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td><label for="languages"> Languages:</label></td>
                 <td><select id="languages">
                     <optgroup label="Programming Languages">
@@ -118,10 +118,10 @@
                 </select>
             </td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td> <textarea  rows="4" cols="30" placeholder="short explanation about yourself"></textarea> </td>
             </tr>
-            <tr>
+            <tr class="form-table">
                 <td><button>submit</button> </td>
                 <td><input type="reset"> </td>
             </tr>
@@ -135,7 +135,7 @@
 <section id="table" class="container">
 
     <h1>Table</h1>
-    <table>
+    <table class="first-table">
         <tr>
             <th rowspan="8" class="rotate">Right Care</th>
             <th colspan="7">Simple Bill</th>
@@ -206,6 +206,39 @@
         </tr>
 
     </table>
+
+        <table class="second-table">
+            <tr>
+                <th></th>
+                <th>Baseball</th>
+                <th>Basketball</th>
+                <th>Football</th>
+                <th>Total</th>
+    
+            </tr>
+            <tr>
+                <th>Male</th>
+                <td>13</td>
+                <td>15</td>
+                <td>20</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <th>Female</th>
+                <td>23</td>
+                <td>16</td>
+                <td>13</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td>36</td>
+                <td>31</td>
+                <td>33</td>
+                <td>100</td>
+            </tr>
+        </table>
+    
 
 </section>
 
