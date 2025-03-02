@@ -104,4 +104,13 @@ img{
     width: 120px;
 }
 
+/* css for video */
+#video h1{
+    margin:55px 550px;
+}
+#video{
+    padding:50px;
+}
+
+
 
