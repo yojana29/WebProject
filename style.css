@@ -1,12 +1,15 @@
 
-
-
 .container{
-    min-width:1200px;
+    max-width:1550px;
     height:100vh;
     padding:20px;
     /* background-color:whitesmoke; */
     background-color: #f1dfd3;
+}
+.topic{
+    position:relative;
+    top:20px;
+    left:600px;
 }
 .heading{
     position:relative;
@@ -14,6 +17,18 @@
     left:250px;
     
 }
+ .sidebar{
+    flex-direction:column;
+    background-color:#f1dfd3;
+    max-width:50px;
+    height:100vh; 
+    padding:10px;
+    gap:50px;
+    position:relative;
+    top:100px;  
+} 
+
+
 .flex{
     display:flex;
     
@@ -54,11 +69,12 @@ a:focus{
 
 /* css adding in the header part */
 header{
-    /* background-color:white; */
+    
     width:100%;
     position:fixed;
     top:0;
     background-color:beige;
+    z-index:1;
 }
 a{
    text-decoration: none; 
@@ -66,39 +82,64 @@ a{
 }
 /* css added in the form */
 
-form{
-    margin:25px 500px;
-    max-width:max-content;
-    background-color: whitesmoke;
+
+.forms{
+    /* max-width:max-content; */
+    padding:15px;
+    flex-direction:row;
+    gap:100px;
 }
-.form-table{
+fieldset{
+    background-color: whitesmoke;
+    border-radius:10px;
+    box-shadow:10px 10px 10px 10px  gray;
+    position:relative;
+    bottom:15px;
+
+}
+.form-table , .second-form{
     border:none;
 }
 .form-table td{
     border:none;
 }
-
-#form h1{
-    /* margin-left:250px; */
+.second-form td{
+    border:none;
+}
+.second-form tr{
+    border:none;
+}
+.second-form th{
+    border:none;
+}
+.second-form{
+    border:2px solid black;
+    background-color:whitesmoke;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:10px 10px 10px 10px  gray;
     position:relative;
-    top:20px;
-    left:600px;
+    top:50px;
+
 
 }
+
+
 
 /* css for table */
 
-/* table {
-    border-spacing: 0 10px; The first value (0) is for column spacing, the second (30px) is for row spacing
-} */
-#table h1{
-    margin:55px 550px;
+#table{
+    padding:20px;
 }
+
 .first-table{
     border:2px solid black;
     border-collapse:collapse;
     position:relative;
     left:150px;
+    top:50px;
+    box-shadow:10px 10px 10px 10px  gray;
+
 
 }
 tr,th,td{
@@ -116,41 +157,40 @@ tr,th,td{
     border-collapse:collapse;
     position:relative;
     left:750px;
-    bottom:200px;
-}
-img{
-    height: 120px;
-    width: 120px;
+    bottom:150px;
+    box-shadow:10px 10px 10px 10px  gray;
+
 }
 
+
 /* css for video */
-#video h1{
-    margin:55px 550px;
-}
 #video{
-    padding:50px;
+    padding:20px;
+}
+video{
+    border:2px solid black;
+    box-shadow:10px 10px 10px 10px  gray;
+    margin:10px;
+}
+.videos{
+    position:relative;
+    top:15px;
+
 }
 /* css for images */
 #images{
     display:flex;
     flex-direction:row;
     gap:150px;
-    padding:50px;
-}
-#images h1{
-    position:relative;
-    top:20px;
-    left:600px;
-    /* margin:0 auto; */
 }
 .first-img{
     width:500px;
     height:300px;
+    padding:30px;
     display:flex;
     flex-wrap:wrap;
     position:relative;
     top:100px;
-
 }
 
 .second-img{
@@ -162,12 +202,20 @@ img{
     top:100px; 
 }
 
-#audio h1{
-    position:relative;
-    top:20px;
-    left:600px;
-    /* margin:0 auto; */
+img{
+    height: 120px;
+    width: 120px;
 }
+ img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+ img:hover {
+    transform: scale(1.2); /* Increase size by 20% */
+  }
+  
+
+
 
 
 
