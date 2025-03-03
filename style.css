@@ -69,6 +69,7 @@ a{
 form{
     margin:25px 500px;
     max-width:max-content;
+    background-color: whitesmoke;
 }
 .form-table{
     border:none;
@@ -77,8 +78,12 @@ form{
     border:none;
 }
 
- form h1{
-    margin-left:250px;
+#form h1{
+    /* margin-left:250px; */
+    position:relative;
+    top:20px;
+    left:600px;
+
 }
 
 /* css for table */
