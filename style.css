@@ -1,9 +1,12 @@
 
+
+
 .container{
     min-width:1200px;
     height:100vh;
     padding:20px;
-    background-color:whitesmoke;
+    /* background-color:whitesmoke; */
+    background-color: #f1dfd3;
 }
 .heading{
     position:relative;
@@ -36,11 +39,22 @@ a:focus{
     background-color:rgba(159,223,181,255);
 }
 
+.gif{
+    width:500px;
+    height:500px;
+    position:relative;
+    left:800px;
+    top:100px;
+}
+.gifs{
+    position:relative;
+    top:50px;
+}
 
 
 /* css adding in the header part */
 header{
-    background-color:white;
+    /* background-color:white; */
     width:100%;
     position:fixed;
     top:0;
@@ -110,6 +124,44 @@ img{
 }
 #video{
     padding:50px;
+}
+/* css for images */
+#images{
+    display:flex;
+    flex-direction:row;
+    gap:150px;
+    padding:50px;
+}
+#images h1{
+    position:relative;
+    top:20px;
+    left:600px;
+    /* margin:0 auto; */
+}
+.first-img{
+    width:500px;
+    height:300px;
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+    top:100px;
+
+}
+
+.second-img{
+    width:500px;
+    height:300px;
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+    top:100px; 
+}
+
+#audio h1{
+    position:relative;
+    top:20px;
+    left:600px;
+    /* margin:0 auto; */
 }
 
 

@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
     <header >
         <ul class="flex ">
            <li> <a href="#form">Forms</a> </li>
-           <li> <a href="#table">Table</a></li>
-           <li> <a href="#video" >Video</a></li>
-           <li> <a href="#audio">Audio</a></li>
+           <li> <a href="#table">Tables</a></li>
+           <li> <a href="#video">Videos</a></li>
+           <li> <a href="#audio">Audios</a></li>
            <li> <a href="#images">Images</a></li>
         </ul>
 
     </header>
+    <section class="container">
+        <div class="sidebar">
+            <i class="fa-brands fa-facebook"></i>
+            </div>
+
+    </section>
+
 <section class="container first-page">
     <h1 class="heading">Let's See Some HTML AND CSS WORKS</h1>
+    <h1>EVERY CLICK TAKES YOU CLOSER TO SOMETHING NEW</h1>
+    <img  class="gifs"   src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWJjN2EybG8ycTk1ZHZ3MmppMjF6bWx2YnNxeTg5cjc0em95M3B2NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xlcR4sYSBT34fQqApS/giphy.gif" alt="hello">
+    <!-- <img src="intro-image.gif" alt="" > -->
+    <img src="first-page.gif" alt="" class="gif">
 
 </section>
     
-    <section id="form" class="container">
+    <section id="form" class="container flex ">
        
        
         <form action="">
@@ -93,7 +109,7 @@
                 </td>
             </tr>
             <tr class="form-table">
-                <td><label for="hobby">Favourite Hobbies:></td>
+                <td><label for="hobby">Favourite Hobbies:</td>
                 <td>
                     <select name="hobbies" id="hobby">
                         <option value="Travelling">Travelling</option>
@@ -129,6 +145,69 @@
         </table>
  
 </fieldset>   
+</form>
+
+<form>
+    <h1> User personal form</h1>
+    <label for="name">Enter your name</label>
+    <br>
+    <input type="text" placeholder="full name" id="name">
+    <br>
+    <label for="email">Enter your email</label>
+    <br>
+    <input type="email" placeholder="email"id="email">
+    <br>
+    <label for="password">Enter your password</label>
+    <br>
+    <input type="password" placeholder="password"id="password">
+    <br>
+    <label for="confirm">confirm your password</label>
+    <br>
+    <input text="new password" placeholder="confirm password" id="confirm">
+    <br>
+    <label for=""> Enter your gender</label>
+    <br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <br>
+    <input type="radio"  id="female" name="gender" value="female">
+    <label for="female">female</label>
+    <br>
+    <input type="radio" id="others" name="gender" value="others">
+    <label for="others">others</label>
+    <br>
+    <label for="">Enter your favourite subject</label>
+    <br>
+    <input type="checkbox" id="nepali"  > 
+    <label for="nepali">nepali</label>
+    <br>
+    <input type="checkbox" id="english" >
+    <label for="english">english</label>
+    <br>
+    <input type="checkbox" id="computer" >
+    <label for="computer">computer</label> 
+    <br>
+    <label for="address">Enter your address:</label> 
+    <br>
+    <textarea id="address" rows="4" cols="30" placeholder="address"></textarea>
+    <br>
+    <button>sign-up</button> <br>
+
+    <label for="nationality">Select your nationality</label>
+    <select>
+        <option value="1">Nepalese</option>
+        <option value="2">indian</option>
+        <option value="3">others</option>
+
+    </select>
+
+    <input type="color">
+    <input type="date">
+    <input type="hidden">
+    <input type="reset">
+    <input type="search">
+    <input type="submit" value="submit">
+
 </form>
 </section>
 
@@ -244,6 +323,7 @@
 
 
       <section id="video" class="container">
+        <h1>Videos</h1>
 
       <video width="320" height="240" controls>
         <source src="video.mp4" type="video/mp4">
@@ -284,10 +364,10 @@
          <source src="vid3.mp4" type="video/ogg">
       </video>
 
-      <video width="320" height="240" controls>
+      <!-- <video width="320" height="240" controls>
         <source src="videooo.mp4" type="video/mp4">
          <source src="videooo.mp4" type="video/ogg">
-      </video>
+      </video> -->
 
       </div>
 
@@ -297,6 +377,9 @@
 
 
      <section id="images" class="container">
+        <h1>Images</h1>
+        <div class="first-img">
+
 <img src="flower.jpg">
 <img src="cristina-pop-VLj5j1uyVgQ-unsplash.jpg">
 <img src="yoksel-zok-2qirUiysnbg-unsplash.jpg">
@@ -314,16 +397,16 @@
 <img src="jon-flobrant-rB7-LCa_diU-unsplash.jpg">
 <img src="kazuend-cCthPLHmrzI-unsplash.jpg">
 <img src="blake-verdoorn-cssvEZacHvQ-unsplash.jpg">
-
-<img src="abc.jpg">
-<img src="bb.jpg">
-<img src="bbc.jpg">
-<img src="def.jpg">
-<img src="ghi.jpg">
-<img src="jkl.jpg">
-<img src="mno.jpg">
-<img src="dog.jpg">
-
+</div>
+<!-- <img src="abc.jpg"> -->
+<!-- <img src="bb.jpg"> -->
+<!-- <img src="bbc.jpg"> -->
+<!-- <img src="def.jpg"> -->
+<!-- <img src="ghi.jpg"> -->
+<!-- <img src="jkl.jpg"> -->
+<!-- <img src="mno.jpg"> -->
+<!-- <img src="dog.jpg"> -->
+<div class="second-img">
 <img src="moon.jpg">
 <img src="chuttersnap-pE8WW245aik-unsplash.jpg">
 <img src="guzman-barquin-Qd688l1yDOI-unsplash.jpg">
@@ -340,9 +423,11 @@
 <img src="cloud.jpg">
 <img src="clouds.jpg">
 <img src="cloudss.jpg">
+</div>
 
 </section>
      <section id="audio" class="container">
+        <h1>Audios</h1>
 
         <audio controls>
             <source src="music.mp3" type="audio/ogg">
