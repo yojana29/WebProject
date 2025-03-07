@@ -1,6 +1,16 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: fit-content;
+}
 .container{
-    max-width:1550px;
+    /* max-width:1550px; */
+    width:clamp(140px,auto,fit-content);
+    border: 1px solid red;
     height:100vh;
     padding:20px;
     /* background-color:whitesmoke; */
@@ -15,6 +25,7 @@
     position:relative;
     top:400px;
     left:250px;
+    font-size:40px;
     
 }
  .sidebar{
@@ -55,15 +66,23 @@ a:focus{
 }
 
 .gif{
-    width:500px;
-    height:500px;
+    width:450px;
+    height:450px;
     position:relative;
     left:800px;
-    top:100px;
+    top:80px;
 }
 .gifs{
     position:relative;
-    top:50px;
+     top:350px;
+    left: 350px; 
+}
+.giftss{
+    position:relative;
+bottom: 300px;
+left: 100px;
+width:300px;
+height:300px;
 }
 
 
@@ -71,6 +90,8 @@ a:focus{
 header{
     
     width:100%;
+    height:45px;
+    padding:5px;
     position:fixed;
     top:0;
     background-color:beige;
@@ -79,6 +100,23 @@ header{
 a{
    text-decoration: none; 
    margin-right:20px;
+}
+.heading2{
+    width:400px;
+    height:150px;
+    padding:25px;
+    border-radius:100%;
+    border:2px solid black;
+    position:relative;
+    left:850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.heading2 h1{
+    text-align: center;
+
 }
 /* css added in the form */
 
@@ -97,6 +135,7 @@ fieldset{
     bottom:15px;
 
 }
+
 .form-table , .second-form{
     border:none;
 }
@@ -186,7 +225,7 @@ video{
 .first-img{
     width:500px;
     height:300px;
-    padding:30px;
+    /* padding:30px; */
     display:flex;
     flex-wrap:wrap;
     position:relative;
@@ -212,6 +251,10 @@ img{
   
  img:hover {
     transform: scale(1.2); /* Increase size by 20% */
+  }
+  /* css for audios */
+  .audiosss{
+    margin-top:50px;
   }
   
 
