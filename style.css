@@ -6,10 +6,11 @@
 }
 body{
     max-width: fit-content;
+    overflow:hidden;
 }
 .container{
     /* max-width:1550px; */
-    width:clamp(140px,auto,fit-content);
+    /* width:clamp(140px,auto,fit-content); */
     border: 1px solid red;
     height:100vh;
     padding:20px;
@@ -33,6 +34,13 @@ body{
 .flex{
     display:flex;
     
+}
+.our-img{
+    width:50px;
+    height:50px;
+    border-radius:80%;
+    position:relative;
+    bottom:8px;
 }
 ul{
     list-style:none;
@@ -60,19 +68,21 @@ a:focus{
     height:450px;
     position:relative;
     left:800px;
-    top:80px;
+    top:50px;
 }
 .gifs{
     position:relative;
-     top:350px;
-    left: 350px; 
+    top:30px;
+    left:150px; 
+    width:200px;
+    height:200px;
 }
 .giftss{
     position:relative;
 bottom: 300px;
 left: 100px;
-width:300px;
-height:300px;
+width:200px;
+height:200px;
 }
 
 
@@ -202,29 +212,30 @@ video{
     margin:10px;
 }
 .videos{
-    position:relative;
-    top:15px;
+    display:grid;
+    grid-template-rows:repeat(4,auto);
+    grid-template-columns: repeat(4,auto);
+    margin-top:50px;
 
 }
 /* css for images */
-/* #images{
-    display:flex;
-    flex-direction:row;
-    gap:150px;
-} */
 
-/* .second-img{
-    width:500px;
-    height:300px;
-    display:flex;
-    flex-wrap:wrap;
-    position:relative;
-    top:100px; 
-} */
+ .img-box{
+    display:grid;
+    grid-template-columns: repeat(4,280px);
+    grid-template-rows: repeat(2,280px);
+    width:fit-content;
+    box-sizing: border-box;
+    margin-left:80px;
 
-img{
-    height:200px;
-    width: 200px;
+ }
+ 
+
+.img-box > img{
+    height:280px;
+    width: 280px;
+    margin-top:30px;
+    border:2px solid white;
 }
  img {
     transition: transform 0.3s ease-in-out;
